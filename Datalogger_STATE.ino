@@ -76,7 +76,7 @@ void loop() {
 }
 
 void blinkLED(int led, int t) { //Blink led every t milliseconds
-  if (millis() % t > t / 2) {
+  if (millis() % t > t / 2) { //50% duty cycle
     blinkState = true;
   } else {
     blinkState = false;
